@@ -1,88 +1,94 @@
+:root {
+  --color: rgb(253, 253, 253);
+  --color-secondary: rgb(0, 0, 0);
+}
+
+body.btn {
+  background-color: var(--color);
+  color: var(--color-secondary);
+}
+
 body {
-    font-family: "Roboto Mono", monospace;
-    /* min-height: 400px; */
-    /* background-image: url("img/QUENTE-E-FRIO.jpg"); */
-    background-color: #000000;
-    background-size: 130vh;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    
-  }
-  
-  .container {
-    text-align: center;
-    padding: 20px;
-    height: 100vh;
-  }
-  
-  .page-title {
-    color: #ffffff;
-    margin: 0 0 5px;
-  }
-  
-  .page-subtitle {
-    color: #ffffff;
-    margin-top: 5px;
-  }
-  
-  .page-logo {
-    width: 800px;
-  }
-  
-  .alura-logo {
-    width: 40px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
-  
-  input {
-    margin: 12px;
-    padding: 6px;
-    border-radius: 5px;
-  }
-  
-  label {
-    color: white;
-  }
-  
-  button {
-    margin-top: 12px;
-    padding: 40px 20px 40px 10px;
-    border-radius: 10px;
-    background: linear-gradient(to right, #ff6600, #f51818);
-    border: 1px solid #ffffff;
-    color: #000000;
-    font-size: 20px;
-  }
-  button:hover{
-    background: linear-gradient(to right, #f51818, #ff6600);
-    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  
-  h2 {
-    color: #ffffff;
-    font-size: 30px;
-  }
-
-  footer{
-    background: linear-gradient(to right, #ff5900, #e81010);
-    color: white;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
+  font-family: "Roboto Mono", monospace;
+  background-size: 130vh;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-color: var(--color-secondary);
 }
 
-footer:hover{
-    background: linear-gradient(to right, #e81010, #ff5900);
-    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+.container {
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
 }
 
-footer span{
-    color: white;
-    font-size: 20px;
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
 }
-  
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 400px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+input {
+  margin: 12px;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+label {
+  color: white;
+}
+
+button {
+  margin-top: 12px;
+  padding: 40px 20px 40px 10px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #ff6600, #f51818);
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+}
+button:hover {
+  background: linear-gradient(to right, #f51818, #ff6600);
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+footer {
+  background: linear-gradient(to right, #ff5900, #e81010);
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+footer:hover {
+  background: linear-gradient(to right, #e81010, #ff5900);
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+footer span {
+  color: white;
+  font-size: 20px;
+}
