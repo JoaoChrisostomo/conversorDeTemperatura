@@ -1,11 +1,13 @@
 :root {
   --color: rgb(253, 253, 253);
   --color-secondary: rgb(0, 0, 0);
+  --btn-background: rgb(250, 67, 11);
 }
 
-body.btn {
-  background-color: var(--color);
-  color: var(--color-secondary);
+body.dark-theme {
+  --color: rgb(0, 0, 0);
+  --color-secondary: rgb(151, 137, 137);
+  --btn-background: rgb(16, 17, 16);
 }
 
 body {
@@ -14,6 +16,7 @@ body {
   background-position: center bottom;
   background-repeat: no-repeat;
   background-color: var(--color-secondary);
+  transition: background 0.3s linear, color 0.3s linear;
 }
 
 .container {
@@ -57,11 +60,12 @@ button {
   margin-top: 12px;
   padding: 40px 20px 40px 10px;
   border-radius: 10px;
-  background: linear-gradient(to right, #ff6600, #f51818);
+  /* background: linear-gradient(to right, #ff6600, #f51818); */
   border: 1px solid #ffffff;
   color: #ffffff;
   font-size: 20px;
   cursor: pointer;
+  background-color: var(--btn-background);
 }
 button:hover {
   background: linear-gradient(to right, #f51818, #ff6600);
