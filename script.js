@@ -1,5 +1,5 @@
 function celsiusFahrenheit() {
-  const celsiusFahrenheit = parseFloat(document.getElementById("valor"));
+  const celsiusFahrenheit = parseFloat(document.getElementById("valor").value);
   const converterCelsiusParaFahrenheit = celsiusFahrenheit * 1.8 + 32;
   const elementoValorConvertidoCelsiusParaFahrenheit = document.getElementById(
     "valorConvertidoCelsiusParaFahrenheit"
@@ -16,7 +16,7 @@ function celsiusKelvin() {
     "valorConvertidoCelsiusParaKelvin"
   );
   const valorConvertidoCelsiusParaKelvin =
-    "A temperatura em Kelvin é " + converterCelsiusParaKelvin;
+    "A temperatura em Celsius para Kelvin é " + converterCelsiusParaKelvin;
   elementoValorConvertidoCelsiusParaKelvin.innerHTML = valorConvertidoCelsiusParaKelvin;
 }
 
@@ -31,7 +31,7 @@ function fahrenheitKelvin() {
     "valorConvertidoFahrenheitParaKelvin"
   );
   const valorConvertidoFahrenheitParaKelvin =
-    "A temperatura em Kelvin é " + converterFahrenheitParaKelvinFixado;
+    "A temperatura em Fahrenheit para Kelvin é " + converterFahrenheitParaKelvinFixado;
   elementoValorConvertidoFahrenheitParaKelvin.innerHTML = valorConvertidoFahrenheitParaKelvin;
 }
 
